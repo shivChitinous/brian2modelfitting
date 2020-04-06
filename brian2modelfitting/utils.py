@@ -1,4 +1,4 @@
-from tqdm.tqdm import tqdm
+from tqdm import tqdm
 from types import FunctionType
 
 

@@ -1,4 +1,4 @@
-from tqdm.autonotebook import tqdm
+from tqdm.tqdm import tqdm
 from types import FunctionType
 
 

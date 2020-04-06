@@ -159,7 +159,7 @@ class NevergradOptimizer(Optimizer):
         instruments = []
         for i, name in enumerate(parameter_names):
             assert len(bounds[i]) == 2
-            vars()[name] = inst.var.Array(1).asscalar().bounded(np.array([bounds[i][0]]),
+            vars()[name] = inst.var.Array(1).item().bounded(np.array([bounds[i][0]]),
                                                                 np.array([bounds[i][1]]))
             instruments.append(vars()[name])
 
